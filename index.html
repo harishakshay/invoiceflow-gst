@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvoiceFlow · GST Invoicing for Small Businesses</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="login">
+
+<div class="login-page">
+    <div class="login-wrap">
+        <section class="login-copy">
+            <div class="brand"><span class="brand-mark">IF</span> InvoiceFlow</div>
+            <h1>GST invoices in 60 seconds. Payments you never lose track of.</h1>
+            <p>Built for Indian small businesses: create tax-correct invoices, collect over UPI and see exactly who owes you money.</p>
+            <ul>
+                <li>Automatic CGST + SGST or IGST from the place of supply</li>
+                <li>Printable A4 tax invoice with a UPI QR code</li>
+                <li>Overdue tracking, receivables ageing and GST summary</li>
+            </ul>
+        </section>
+
+        <form class="login-card" id="loginForm" novalidate>
+            <h2>Sign in</h2>
+            <p class="sub">Welcome back. Let's get you paid.</p>
+            <div class="form-error hidden" id="loginError"></div>
+            <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="username" required>
+            </div>
+            <div class="field">
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" autocomplete="current-password" required>
+            </div>
+            <button class="btn btn-primary" style="width:100%;padding:10px" type="submit">Sign in</button>
+            <p class="note">Demo account details are in README.md</p>
+        </form>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
